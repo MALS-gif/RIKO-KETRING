@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIKO KETRING - Katering Tradisional & Modern Khas Batak</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome untuk ikon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter & Playfair Display -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        batakRed: '#990000',
+                        batakDarkRed: '#660000',
+                        batakGold: '#D4AF37',
+                        batakDark: '#111111',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Aksen Motif Gorga / Nuansa Batak */
+        .gorga-border {
+            border-bottom: 4px solid #990000;
+            background-image: linear-gradient(to right, #990000, #D4AF37, #111111, #990000);
+            height: 6px;
+        }
+        .hero-pattern {
+            background-color: #1a1a1a;
+            background-image: radial-gradient(#990000 0.75px, transparent 0.75px), radial-gradient(#D4AF37 0.75px, #1a1a1a 0.75px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans antialiased">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <div class="gorga-border"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-12 h-12 rounded-full bg-batakRed text-white flex items-center justify-center font-serif font-bold text-xl shadow-md border-2 border-batakGold">
+                    RK
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-serif font-bold text-batakRed tracking-wide">RIKO KETRING</span>
+                    <p class="text-xs text-gray-500 font-medium">Autentik & Berkualitas</p>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 font-medium text-sm">
+                <a href="#beranda" class="hover:text-batakRed transition">Beranda</a>
+                <a href="#tentang" class="hover:text-batakRed transition">Tentang Kami</a>
+                <a href="#layanan" class="hover:text-batakRed transition">Layanan</a>
+                <a href="#menu" class="hover:text-batakRed transition">Menu Spesial</a>
+                <a href="#kontak" class="hover:text-batakRed transition">Kontak</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/62895423721166?text=Halo%20Riko%20Ketring,%20saya%20ingin%20bertanya%20mengenai%20layanan%20katering." target="_blank" class="hidden sm:inline-flex items-center gap-2 bg-batakRed hover:bg-batakDarkRed text-white px-5 py-2.5 rounded-full font-medium text-sm transition shadow-md hover:shadow-lg">
+                    <i class="fa-brands fa-whatsapp text-lg"> <span>Pesan Sekarang</span></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="beranda" class="relative hero-pattern text-white py-20 lg:py-32">
+        <div class="absolute inset-0 bg-black/60"></div>
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+            <span class="inline-block py-1.5 px-4 rounded-full bg-batakRed/80 border border-batakGold text-batakGold text-xs sm:text-sm font-semibold tracking-widest uppercase mb-6 shadow-sm">
+                Kuliner Tradisional & Modern
+            </span>
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-extrabold mb-6 leading-tight">
+                Horas! Selamat Datang di <span class="text-batakGold">RIKO KETRING</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-base sm:text-lg text-gray-200 mb-10 leading-relaxed">
+                Menyajikan cita rasa masakan khas Batak dan nusantara terbaik dengan bahan-bahan pilihan berkualitas tinggi, higienis, dan diolah dengan penuh ketulusan.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="https://wa.me/62895423721166?text=Halo%20Riko%20Ketring,%20saya%20mau%20konsultasi%20menu%20katering." target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-3.5 rounded-full shadow-lg transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-xl"></i> Hubungi WhatsApp Kami
+                </a>
+                <a href="#layanan" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-transparent hover:bg-white/10 text-white border-2 border-white font-semibold px-8 py-3.5 rounded-full transition">
+                    Lihat Layanan
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI & SKALA ORDERAN -->
+    <section id="tentang" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="inline-block border-l-4 border-batakRed pl-3 text-batakRed font-bold text-sm uppercase tracking-wider mb-2">Tentang Riko Ketring</div>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 mb-6">Menerima Pesanan Besar & Kecil untuk Segala Acara Anda</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Apakah Anda sedang merencanakan pesta adat Batak, pernikahan, arisan keluarga, syukuran, acara kantor, ataupun butuh katering harian? <strong>RIKO KETRING</strong> siap melayani kebutuhan konsumsi Anda dengan profesional.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Kami melayani <strong>orderan skala kecil maupun besar</strong> tanpa mengurangi kualitas rasa dan pelayanan ramah khas kekeluargaan.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-6">
+                        <div class="p-4 bg-gray-50 rounded-xl border border-gray-100 shadow-sm">
+                            <div class="text-batakRed text-3xl font-serif font-bold mb-1">100%</div>
+                            <div class="text-sm font-medium text-gray-700">Rasa Autentik & Halal/Non-Halal Tersedia</div>
+                        </div>
+                        <div class="p-4 bg-gray-50 rounded-xl border border-gray-100 shadow-sm">
+                            <div class="text-batakRed text-3xl font-serif font-bold mb-1">24/7</div>
+                            <div class="text-sm font-medium text-gray-700">Pelayanan & Konsultasi Cepat</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-2 bg-batakRed rounded-2xl opacity-10 blur-lg"></div>
+                    <div class="relative bg-white p-6 sm:p-8 rounded-2xl border border-gray-200 shadow-xl">
+                        <h3 class="text-xl font-serif font-bold text-gray-900 mb-4 pb-2 border-b border-gray-100 flex items-center gap-2">
+                            <i class="fa-solid fa-utensils text-batakRed"></i> Jenis Acara yang Kami Layani
+                        </h3>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-batakRed"></i> Pesta Adat Batak & Pernikahan</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-batakRed"></i> Arisan Keluarga & Syukuran</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-batakRed"></i> Konsumsi Kantor & Rapat / Meeting</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-batakRed"></i> Katering Nasi Kotak / Box Harian</li>
+                            <li class="flex items-center gap-3"><i class="fa-solid fa-check text-batakRed"></i> Acara Keluarga Skala Kecil maupun Besar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAYANAN KAMI (GRID) -->
+    <section id="layanan" class="py-16 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-batakRed font-bold text-sm uppercase tracking-wider">Layanan Unggulan</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 mt-2">Solusi Katering Terbaik untuk Anda</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition border-t-4 border-batakRed">
+                    <div class="w-14 h-14 rounded-xl bg-red-50 text-batakRed flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-bowl-food"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Pesta & Acara Adat</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Menyediakan porsi besar untuk pesta adat Batak, pernikahan, maupun acara besar lainnya dengan menu tradisional lengkap dan citarasa khas.
+                    </p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition border-t-4 border-batakGold">
+                    <div class="w-14 h-14 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-box-open"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Nasi Kotak & Harian</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Cocok untuk konsumsi kantoran, rapat, ibadah, seminar, maupun katering harian rumah tangga dengan menu yang bervariasi setiap harinya.
+                    </p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition border-t-4 border-gray-900">
+                    <div class="w-14 h-14 rounded-xl bg-gray-100 text-gray-900 flex items-center justify-center text-2xl mb-6">
+                        <i class="fa-solid fa-users"></i>
+                    </div>
+                    <h3 class="text-xl font-serif font-bold text-gray-900 mb-3">Arisan & Syukuran Kecil</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Menerima pesanan skala kecil untuk acara keluarga di rumah, arisan bulanan, ulang tahun, dan berbagai bentuk syukuran sederhana.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU SPESIAL -->
+    <section id="menu" class="py-16 sm:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-batakRed font-bold text-sm uppercase tracking-wider">Pilihan Menu</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-gray-900 mt-2">Menu Andalan Khas RIKO KETRING</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Menu Item -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x300/990000/ffffff?text=Arsik+Ikan+Mas" alt="Arsik Ikan Mas" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-gray-900 mb-1">Ikan Mas Arsik</h3>
+                        <p class="text-xs text-gray-500 mb-3">Bumbuandaliman & asam cikala khas Toba</p>
+                        <span class="inline-block bg-red-100 text-batakRed text-xs font-semibold px-2.5 py-1 rounded">Menu Utama</span>
+                    </div>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x300/333333/ffffff?text=Saksang+Batak" alt="Saksang" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-gray-900 mb-1">Saksang / Na Tinombur</h3>
+                        <p class="text-xs text-gray-500 mb-3">Olahan daging rempah pilihan kaya rasa</p>
+                        <span class="inline-block bg-red-100 text-batakRed text-xs font-semibold px-2.5 py-1 rounded">Favorit Pesta</span>
+                    </div>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x300/D4AF37/ffffff?text=Ayam+Napinadar" alt="Ayam Napinadar" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-gray-900 mb-1">Ayam Napinadar</h3>
+                        <p class="text-xs text-gray-500 mb-3">Ayam bakar bumbu darah khas tradisional</p>
+                        <span class="inline-block bg-red-100 text-batakRed text-xs font-semibold px-2.5 py-1 rounded">Spesial Tradisional</span>
+                    </div>
+                </div>
+                <!-- Menu Item -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden border border-gray-200 shadow-sm hover:shadow-md transition">
+                    <div class="h-48 overflow-hidden bg-gray-200">
+                        <img src="https://placehold.co/400x300/111111/ffffff?text=Aneka+Nasi+Kotak" alt="Nasi Kotak" class="w-full h-full object-cover hover:scale-105 transition duration-300">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif font-bold text-lg text-gray-900 mb-1">Paket Nasi Kotak / Box</h3>
+                        <p class="text-xs text-gray-500 mb-3">Praktis untuk rapat, kantor, dan acara sosial</p>
+                        <span class="inline-block bg-red-100 text-batakRed text-xs font-semibold px-2.5 py-1 rounded">Order Harian</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK & ALAMAT -->
+    <section id="kontak" class="py-16 sm:py-24 bg-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-batakGold font-bold text-sm uppercase tracking-wider">Hubungi Kami</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold mt-2 mb-6">Siap Melayani Pesanan Acara Anda</h2>
+                    <p class="text-gray-300 mb-8 leading-relaxed">
+                        Segera konsultasikan kebutuhan menu dan jumlah porsi acara Anda dengan admin kami. Kami siap memberikan penawaran terbaik dan pelayanan yang memuaskan.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-batakRed text-white flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Alamat Kami</h4>
+                                <p class="text-gray-300 text-sm mt-1">Jl. Jamin Ginting No. 128, Padang Bulan, Kota Medan, Sumatera Utara</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 rounded-full bg-batakRed text-white flex items-center justify-center shrink-0 text-lg">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-white">Nomor WhatsApp Admin</h4>
+                                <p class="text-gray-300 text-sm mt-1">0895-4237-21166 (Aktif & Respon Cepat)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white text-gray-800 p-8 rounded-2xl shadow-2xl">
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-gray-900">Pesan Cepat via WhatsApp</h3>
+                    <p class="text-sm text-gray-600 mb-6">Klik tombol di bawah ini untuk langsung terhubung ke WhatsApp Admin RIKO KETRING tanpa perlu menyimpan nomor.</p>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Nama Anda</label>
+                            <input type="text" id="clientName" placeholder="Contoh: Bpk. Maruli" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-batakRed text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-2">Jenis Acara / Kebutuhan</label>
+                            <input type="text" id="clientEvent" placeholder="Contoh: Pesanan 50 Nasi Kotak / Pesta Adat" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-batakRed text-sm">
+                        </div>
+                        <button onclick="sendWhatsAppMessage()" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-3.5 px-6 rounded-lg transition flex items-center justify-center gap-2 shadow-md">
+                            <i class="fa-brands fa-whatsapp text-xl"></i> Kirim Pesan ke WhatsApp
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-black text-gray-400 py-8 text-center text-sm border-t border-gray-800">
+        <div class="gorga-border mb-6"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="font-serif text-white text-lg font-bold mb-2">RIKO KETRING</p>
+            <p class="mb-4">Melayani Pesanan Besar & Kecil Katering Tradisional & Modern Khas Batak.</p>
+            <p>&copy; 2026 Riko Ketring. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <!-- TOMBOL WHATSAPP MENGAMBANG (FLOATING BUTTON) -->
+    <a href="https://wa.me/62895423721166?text=Halo%20Riko%20Ketring,%20saya%20ingin%20memesan%20katering." 
+       target="_blank" 
+       class="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center shadow-2xl transition transform hover:scale-110 focus:outline-none group"
+       title="Chat WhatsApp">
+        <i class="fa-brands fa-whatsapp text-3xl"></i>
+        <!-- Tooltip -->
+        <span class="absolute right-20 bg-gray-900 text-white text-xs px-3 py-1.5 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition whitespace-nowrap pointer-events-none">
+            Chat Admin Kami
+        </span>
+    </a>
+
+    <!-- SCRIPT INTERAKTIF -->
+    <script>
+        function sendWhatsAppMessage() {
+            const name = document.getElementById('clientName').value.trim();
+            const event = document.getElementById('clientEvent').value.trim();
+            
+            let message = "Halo Riko Ketring, saya ingin bertanya mengenai layanan katering.";
+            if(name || event) {
+                message = `Halo Riko Ketring, nama saya ${name || 'Pelanggan'}. Saya ingin memesan/berkonsultasi untuk keperluan: ${event || 'Katering'}.`;
+            }
+            
+            const encodedMessage = encodeURIComponent(message);
+            const whatsappUrl = `https://wa.me/62895423721166?text=${encodedMessage}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+
+</body>
+</html>
